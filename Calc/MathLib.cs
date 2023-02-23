@@ -6,5 +6,10 @@
         {
             throw new NotImplementedException();
         }
+
+        public float Sub(float op1, float op2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

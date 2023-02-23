@@ -32,5 +32,21 @@ namespace TestCalc
             //then
             Assert.That(actualResult, Is.EqualTo(expectedResult));
         }
+
+        [Test]
+        public void Sub_NominalCase_DiffIsCorrectlyReturned()
+        {
+            //given
+            this.op1 = 4;
+            this.op2 = 12;
+            float expectedResult = -8;
+            float actualResult;
+
+            //when
+            actualResult = this.mathLib.Sub(this.op1, this.op2);
+
+            //then
+            Assert.That(actualResult, Is.EqualTo(expectedResult));
+        }
     }
 }
