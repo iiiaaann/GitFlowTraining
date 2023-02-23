@@ -48,5 +48,21 @@ namespace TestCalc
             //then
             Assert.That(actualResult, Is.EqualTo(expectedResult));
         }
+
+        [Test]
+        public void Mul_NominalCase_DiffIsCorrectlyReturned()
+        {
+            //given
+            this.op1 = 4;
+            this.op2 = 12;
+            float expectedResult = 48;
+            float actualResult;
+
+            //when
+            actualResult = this.mathLib.Mul(this.op1, this.op2);
+
+            //then
+            Assert.That(actualResult, Is.EqualTo(expectedResult));
+        }
     }
 }
