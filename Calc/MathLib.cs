@@ -16,5 +16,10 @@
         {
             throw new NotImplementedException();
         }
+
+        public float Div(float op1, float op2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

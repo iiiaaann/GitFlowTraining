@@ -50,7 +50,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Mul_NominalCase_DiffIsCorrectlyReturned()
+        public void Mul_NominalCase_ProductIsCorrectlyReturned()
         {
             //given
             this.op1 = 4;
@@ -60,6 +60,22 @@ namespace TestCalc
 
             //when
             actualResult = this.mathLib.Mul(this.op1, this.op2);
+
+            //then
+            Assert.That(actualResult, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void Div_NominalCase_RestIsCorrectlyReturned()
+        {
+            //given
+            this.op1 = 4;
+            this.op2 = 12;
+            float expectedResult = 48;
+            float actualResult;
+            
+            //when
+            actualResult = this.mathLib.Div(this.op1, this.op2);
 
             //then
             Assert.That(actualResult, Is.EqualTo(expectedResult));
