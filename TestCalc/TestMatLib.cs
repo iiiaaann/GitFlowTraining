@@ -69,9 +69,9 @@ namespace TestCalc
         public void Div_NominalCase_RestIsCorrectlyReturned()
         {
             //given
-            this.op1 = 4;
-            this.op2 = 12;
-            float expectedResult = 48;
+            this.op1 = 8;
+            this.op2 = 2;
+            float expectedResult = 4;
             float actualResult;
             
             //when
