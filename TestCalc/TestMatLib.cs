@@ -18,7 +18,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Add_NominalCase_SumIsCorrectlyReturned()
+        public void Add_NominalCase_SumIsReturned()
         {
             //given
             this.op1 = 4;
@@ -34,7 +34,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Sub_NominalCase_DiffIsCorrectlyReturned()
+        public void Sub_NominalCase_DiffIsReturned()
         {
             //given
             this.op1 = 4;
@@ -50,7 +50,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Mul_NominalCase_ProductIsCorrectlyReturned()
+        public void Mul_NominalCase_ProductyReturned()
         {
             //given
             this.op1 = 4;
@@ -66,7 +66,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Div_NominalCase_QuotientIsCorrectlyReturned()
+        public void Div_NominalCase_QuotientReturned()
         {
             //given
             this.op1 = 8;
@@ -82,7 +82,7 @@ namespace TestCalc
         }
 
         [Test]
-        public void Square_NominalCase_ResultIsCorrectlyReturned()
+        public void Square_NominalCase_ResultReturned()
         {
             //given
             this.op1 = 3;
@@ -90,7 +90,7 @@ namespace TestCalc
             float actualResult;
 
             //when
-            actualResult = this.mathLib.Power(this.op1);
+            actualResult = this.mathLib.Square(this.op1);
 
             //then
             Assert.That(actualResult, Is.EqualTo(expectedResult));

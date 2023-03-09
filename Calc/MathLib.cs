@@ -22,7 +22,7 @@
             return op1 / op2;
         }
 
-        public float Power(float op1)
+        public float Square(float op1)
         {
             throw new NotImplementedException();
         }
