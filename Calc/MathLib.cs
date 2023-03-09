@@ -24,7 +24,7 @@
 
         public float Square(float op1)
         {
-            throw new NotImplementedException();
+            return op1 * op1;
         }
     }
 }
