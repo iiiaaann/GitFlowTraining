@@ -82,6 +82,22 @@ namespace TestCalc
         }
 
         [Test]
+        public void Div_NominalCase_ThrowException()
+        {
+            //given
+            this.op1 = 8;
+            this.op2 = 0;
+            float expectedResult = 4;
+            float actualResult;
+
+            //when
+            actualResult = this.mathLib.Div(this.op1, this.op2);
+
+            //then
+            Assert.That(actualResult, Is.EqualTo(expectedResult));
+        }
+        
+        [Test]
         public void Square_NominalCase_ResultReturned()
         {
             //given
@@ -91,6 +107,22 @@ namespace TestCalc
 
             //when
             actualResult = this.mathLib.Square(this.op1);
+
+            //then
+            Assert.That(actualResult, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void Power_NominalCase_ResultReturned()
+        {
+            //given
+            this.op1 = 3;
+            this.op2 =27;
+            float expectedResult = 9;
+            float actualResult;
+
+            //when
+            actualResult = this.mathLib.Power(this.op1, this.op2);
 
             //then
             Assert.That(actualResult, Is.EqualTo(expectedResult));
